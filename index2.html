@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE-edge"> 
+      <meta name= "viewport" content="width=device=width, initial-scale=1.0"> 
+      ‹<title>Ball</title>
+    <style>
+
+    #circle{
+    left: 200px;
+    top: 200px;
+    width :100px;
+    height:100px;
+    background-color: navy;
+    border-radius: 50%;
+    animation: animacja 1s infinite ease-in alternate;
+    position: absolute;
+    }
+    @keyframes animacja {
+    from {top: 200px;left: 800px; width: 100px;}
+    to {top: 750px;left: 800px;width: 125px; }
+    }
+    #cien{
+    left: 800px;
+    top: 800px;
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    border-radius: 50%;
+    animation: cien-anim 1s infinite alternate ease-in;
+    }
+    @keyframes cien-anim {
+    from {background-color: rgb(202, 199, 199); filter: blur (10px); width: 100px;}
+    to {background-color: rgb(55, 55, 55); filter: blur (10px); width: 125px;}
+    }
+    </style> 
+</head> 
+<body> 
+    <div id="cien"></div>
+    <div id="circle"></div>
+    </body> 
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
